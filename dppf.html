@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Paladugula - Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        #about {
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            text-align: center;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #about h2 {
+            color: #222;
+            margin-top: 20px;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            color: #444;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            text-align: center;
+        }
+
+        .skill-card {
+            display: inline-block;
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            width: 180px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .skill-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .skill-card:hover {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Projects Section */
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #1e1e1e;
+        }
+
+        .project-card {
+            background-color: white;
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #000;
+            padding: 20px;
+        }
+
+        .project-card p {
+            padding: 0 20px 20px;
+            color: #555;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Resume Section */
+        #resume {
+            background-color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        #resume a {
+            color: white;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        #resume a:hover {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #185a9d, #43cea2);
+            color: white;
+            text-align: center;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+        }
+
+        #contact a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Deepak Paladugula</h1>
+        <p>Front-End Developer | Problem Solver | Creative Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="C:\Users\91778\OneDrive\Desktop\Deepak Resume\my pic.jpg" alt="Deepak Paladugula">
+        <h2>About Me</h2>
+        <p>"I am Deepak Paladugula, a highly motivated and detail-oriented front-end developer with a passion for building intuitive and responsive web interfaces. I bring a strong background in Java programming, enabling me to bridge the gap between back-end and front-end seamlessly. With expertise in modern web technologies like HTML, CSS, JavaScript, and also in C, Python etc.I enjoy turning complex ideas into functional and visually engaging designs,reflecting my commitment to innovation and problem-solving."</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+            HTML & CSS
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript">
+            JavaScript
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React">
+            React.js
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/07/Encryption-vs-Decryption.jpg" alt="Java Encryption">
+            <h3>Encryption and Decryption using Java</h3>
+            <p>Built a Java-based graphical interface demonstrating encryption and decryption techniques, leading to a 35% increase in user comprehension of cryptographic concepts.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwMhnaUSwdPUCKvOo-Kw11f9UrM37C0gkPw&s" alt="Bank Management">
+            <h3>Human Activity recognition</h3>
+            <p>Engineered a robust data pipeline for human activity recognition, integrating wearable sensors and optimizing data processing efficiency.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://www.tatvasoft.com/outsourcing/wp-content/uploads/2024/08/Medication-Tracking-Software-768x389.jpg" alt="E-commerce">
+            <h3>Medication tracking system</h3>
+            <p>Developed a system to help patients and healthcare providers manage medications effectively through logging, monitoring, and notifications.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <a href="deepak_updated.pdf" download="Deepak_Paladugula_Resume.pdf">Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: deepakpaladugula1407@gmail.com</p>
+        <p>Phone: +91-1234567890</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/deepakpaladugula</a></p>
+    </section>
+
+    
+
+</body>
+</html>
